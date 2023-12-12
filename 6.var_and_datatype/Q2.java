@@ -7,5 +7,6 @@ public class Q2
         int s=sc.nextInt();
         int area=s*s;
         System.out.println(area);
+        sc.close();
     }
 }
