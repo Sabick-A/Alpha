@@ -1,0 +1,81 @@
+Boilerplate : Template for all codes
+
+public class Boilerplate
+{
+    public static void main(String args[])
+    {
+        
+    }
+}
+
+
+ primitive data types : byte-1 byte,short-2,char-2,boolean-1,int-4,long-8,float-4,double-8
+ n-primi : String,Array,Class,Object,Interface
+
+ java is a types lang : we have to define datatypes
+ bytes - 8 bits
+
+
+// single line comment
+
+        /*
+         Multi
+         line
+         comment 
+        */
+
+Use object in Scanner class in java util package
+    next() : till space only
+    nextline() : till nextline
+    nextInt() : for numbers
+    nextFloat(),nextByte(),.....
+
+** Java automatically takes decimal numbers as double 
+so while defining float use f as postfix ( eg 3.14f ) **
+
+* type conversion :- byte->short->int->float->long->double
+implicit conversion  is only possible 
+(when types are same (numebr and number or text and text) 
+&& destination type > source type )
+
+lossy conversion : conversion in which data can be lost (big ->small)
+this will give compilation error*
+
+* type casting :- explicit conversion or narrowing conversion
+
+syntax : <type> dest=<type> src;
+usually floor happens. means if float to int dec values will be removed
+
+if char->int then ascii code will be given *
+
+ *Type promotion
+ in expressions type promotion happens
+ >>usually automatically java promotes byte ,short or char operands to int
+ while evaluating an expressions
+ >>if one operandsis long,float,double the whole expressionsis promoted
+ to long ,float or double respectively(which is bigger)
+
+ use case :
+    doubling the value of byte b
+
+    it should be 
+    byte b=5;
+    b=(byte) (b*2);
+    otherwise it will type promote due to presence of 2 and will turn to int
+*
+
+* how java code run ->
+
+jdk(Java development kit) contain development tools
+which contains
+
+JRE(java runtime environment) is a module of jdk  which contains jvm,libaries
+
+java code goes through
+
+((( source code (.java ) ->compiler->byte code(.class) )))-> (((java virtual machine (jvm) -> native code (according to os we working))))
+                               |                                                                |
+                               V                                                                V
+                            Compilation                                                     Execution
+hence java is a portable language because this conversions are happening
+
