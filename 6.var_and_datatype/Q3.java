@@ -8,7 +8,7 @@ public class Q3 {
         float eraser=sc.nextFloat();
         float total=pencil+pen+eraser;
         total+=(total*0.18f);
-        System.out.println(total);
+        System.out.format("%.2f",total);
         sc.close();
     }
 }
